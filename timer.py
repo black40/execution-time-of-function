@@ -15,7 +15,7 @@ def timer(func):
 
     return wrapper()
 
-
+## ----------------EXAMPLE---------------------
 
 @timer
 def foo():
