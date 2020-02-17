@@ -1,6 +1,6 @@
 ''' Balance of opening and closing brackets '''
 
-def find_balans(data, left='[{(', right=']})'):
+def find_balance(data, left='[{(', right=']})'):
     res = []
     for i in data:
         if i in left:
@@ -33,7 +33,7 @@ test_list = [test_string_1, test_string_2, test_string_3, test_string_4, test_st
 
 
 for test in test_list:
-    print('{name}: {func}.'.format(name=find_name(test)[0], func=find_balans(test)))
+    print('{name}: {func}.'.format(name=find_name(test)[0], func=find_balance(test)))
 
 
 
